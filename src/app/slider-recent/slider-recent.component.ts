@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-slider-productos',
-  templateUrl: './slider-productos.component.html',
-  styleUrls: ['./slider-productos.component.css']
+  selector: 'app-slider-recent',
+  templateUrl: './slider-recent.component.html',
+  styleUrls: ['./slider-recent.component.css']
 })
-export class SliderProductosComponent implements OnInit {
+export class SliderRecentComponent implements OnInit {
 
   slides = [
-    {img: "assets/img/product-1.jpg"},
-    {img: "assets/img/product-2.jpg"},
-    {img: "assets/img/product-3.jpg"},
-    {img: "assets/img/product-4.jpg"},
-    {img: "assets/img/product-5.jpg"} 
+    {img: "assets/img/product-6.jpg"},
+    {img: "assets/img/product-7.jpg"},
+    {img: "assets/img/product-8.jpg"},
+    {img: "assets/img/product-9.jpg"},
+    {img: "assets/img/product-10.jpg"} 
   ];
   slideConfig = {autoplay: true,
     infinite: true,

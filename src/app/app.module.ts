@@ -17,6 +17,8 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SliderProductosComponent } from './slider-productos/slider-productos.component';
 import { SliderMarcasComponent } from './slider-marcas/slider-marcas.component';
+import { SliderReviewComponent } from './slider-review/slider-review.component';
+import { SliderRecentComponent } from './slider-recent/slider-recent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { SliderMarcasComponent } from './slider-marcas/slider-marcas.component';
     FooterComponent,
     EncabezadoComponent,
     SliderProductosComponent,
-    SliderMarcasComponent
+    SliderMarcasComponent,
+    SliderReviewComponent,
+    SliderRecentComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

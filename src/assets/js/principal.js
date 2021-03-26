@@ -119,27 +119,6 @@
         asNavFor: '.product-slider-single'
     });
     
-    
-    
-    
-    // Review slider
-    $('.review-slider').slick({
-        autoplay: true,
-        dots: false,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-    
-    
     // Widget slider
     $('.sidebar-slider').slick({
         autoplay: true,
