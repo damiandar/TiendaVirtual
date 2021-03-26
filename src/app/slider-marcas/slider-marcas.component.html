@@ -1,0 +1,21 @@
+<div class="brand">
+    <div class="container-fluid">
+
+        <ngx-slick-carousel class="brand-slider" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfig" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+          <div ngxSlickItem *ngFor="let slide of slides" class="brand-item">
+                <img src="{{ slide.img }}" alt="">
+          </div>
+          </ngx-slick-carousel>
+          
+    </div>
+</div>
+
+
+
+

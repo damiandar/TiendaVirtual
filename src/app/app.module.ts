@@ -14,6 +14,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { FooterComponent } from './footer/footer.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SliderProductosComponent } from './slider-productos/slider-productos.component';
+import { SliderMarcasComponent } from './slider-marcas/slider-marcas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +25,14 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
     CounterComponent,
     FetchDataComponent,
     FooterComponent,
-    EncabezadoComponent
+    EncabezadoComponent,
+    SliderProductosComponent,
+    SliderMarcasComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule, 
+    SlickCarouselModule,
     FontAwesomeModule,
     FormsModule,
     RouterModule.forRoot([
