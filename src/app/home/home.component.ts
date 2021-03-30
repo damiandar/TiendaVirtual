@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  tipoSlider1 = 'Television';
   slides = [
     {img: "assets/img/slider-1.jpg"},
     {img: "assets/img/slider-2.jpg"},

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-slider-productos',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider-productos.component.css']
 })
 export class SliderProductosComponent implements OnInit {
-
+  @Input() tipoSlider: string;
   slides = [
     {img: "assets/img/product-1.jpg"},
     {img: "assets/img/product-2.jpg"},
@@ -14,38 +14,23 @@ export class SliderProductosComponent implements OnInit {
     {img: "assets/img/product-4.jpg"},
     {img: "assets/img/product-5.jpg"} 
   ];
-  slideConfig = {autoplay: true,
+  slideConfig = {
     infinite: true,
+    autoplay: true,
     dots: false,
-    slidesToShow: 4,
+    fade: true,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 4,
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1,
-            }
-        },
-    ]};
-  
+    asNavFor: '.product-slider-single-nav'  
+  };
+  slideConfig2={        
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    asNavFor: '.product-slider-single'
+  };
   addSlide() {
     this.slides.push({img: "http://placehold.it/350x150/777777"})
   }
@@ -74,6 +59,8 @@ export class SliderProductosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+  console.log("tipoSlider:" + this.tipoSlider);
   }
 
 }

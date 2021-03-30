@@ -19,6 +19,10 @@ import { SliderProductosComponent } from './slider-productos/slider-productos.co
 import { SliderMarcasComponent } from './slider-marcas/slider-marcas.component';
 import { SliderReviewComponent } from './slider-review/slider-review.component';
 import { SliderRecentComponent } from './slider-recent/slider-recent.component';
+import { FeaturesComponent } from './features/features.component';
+import { BannerCategoriasComponent } from './banner-categorias/banner-categorias.component';
+import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component';
+import { ProductoListaComponent } from './producto-lista/producto-lista.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,11 @@ import { SliderRecentComponent } from './slider-recent/slider-recent.component';
     SliderProductosComponent,
     SliderMarcasComponent,
     SliderReviewComponent,
-    SliderRecentComponent
+    SliderRecentComponent,
+    FeaturesComponent,
+    BannerCategoriasComponent,
+    ProductoDetalleComponent,
+    ProductoListaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -43,6 +51,8 @@ import { SliderRecentComponent } from './slider-recent/slider-recent.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'producto-lista', component: ProductoListaComponent },
+      { path: 'producto-detalle', component: ProductoDetalleComponent },
     ])
   ],
   providers: [],

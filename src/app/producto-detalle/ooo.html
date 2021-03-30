@@ -1,0 +1,33 @@
+
+                                <div class="col-md-5">
+
+                                    <ngx-slick-carousel class="product-slider-single normal-slider" 
+                                    #slickModal="slick-carousel" 
+                                    [config]="slideConfig" >
+                                    <button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button> 
+                                        <div ngxSlickItem *ngFor="let slide of slides" >
+                                            <img src="{{ slide.img }}" alt="Product Image">
+                                        </div>
+                                    <button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>
+                                    </ngx-slick-carousel>
+
+
+
+                                    <ngx-slick-carousel class="product-slider-single-nav normal-slider" 
+                                    #slickModal="slick-carousel" 
+                                    [config]="slideConfig2" >
+                                    
+                                        <div ngxSlickItem *ngFor="let slide of slides" class="slider-nav-img">
+                                            <img src="{{ slide.img }}" alt="Product Image">
+                                        </div>
+                                   
+                                   </ngx-slick-carousel>
+                                </div>
+
+
+
+
+                        
+                        
+ 
+                        
